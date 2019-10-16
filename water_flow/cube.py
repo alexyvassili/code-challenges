@@ -77,6 +77,7 @@ class Cube:
     def __next__(self):
         current_index = self._iter_index
         if current_index >= len(self.slices):
+            self._iter_index = 0
             raise StopIteration
         self._iter_index += 1
         return self.slices[current_index]
