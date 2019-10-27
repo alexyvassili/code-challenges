@@ -112,6 +112,11 @@ if __name__ == "__main__":
     # ]
 
     c = Cube(data)
+    for cube_slice in c:
+        print(cube_slice)
+
+    for cube_slice in c:
+        print(cube_slice)
     print(
         water_flow(data)
     )
